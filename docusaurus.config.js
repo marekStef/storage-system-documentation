@@ -1,7 +1,7 @@
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
+// There are various equivalent ways to declare your Docusaurus config
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/image-data-storage.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/storageSystemDocs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Marek Stefanec', // Usually your GitHub org/user name.
-  projectName: 'Storage System Project', // Usually your repo name.
+  organizationName: 'marekStef', // Usually your GitHub org/user name.
+  projectName: 'storageSystemDocs', // Usually your repo name.
   trailingSlash: false,
   
   onBrokenLinks: 'throw',
