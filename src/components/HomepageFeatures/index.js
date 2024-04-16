@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Thorough documenation of every part of the system guiding you from the very beginning. Tutorial-like.
       </>
     ),
   },
@@ -18,13 +17,12 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Showing proper examples along the way.
       </>
     ),
   },
   {
-    title: 'Multiple Examples',
+    title: 'Multiple Example Apps',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
