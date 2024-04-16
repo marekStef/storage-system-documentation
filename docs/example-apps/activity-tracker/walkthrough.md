@@ -31,7 +31,88 @@ User can set periodicity of this information gathering and start the gathering t
 This is what such a json file looks like:
 
 ```json title="Windows Apps Info Data"
-
+[
+    {
+        "metadata": {
+            "createdDate": "2024-04-16T17:50:48.486Z",
+            "profile": "activityTracker.com/activityTrackerEvent"
+        },
+        "payload": {
+            "dimensions": {
+                "bottom": -31972,
+                "left": -32000,
+                "right": -31840,
+                "top": -32000
+            },
+            "exeName": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\devenv.exe",
+            "isMinimised": true,
+            "memoryUsageInBytes": "852729856",
+            "moduleName": "devenv.exe",
+            "processId": "3435973836",
+            "title": "activityTracker (Running) - Microsoft Visual Studio"
+        }
+    },
+    {
+        "metadata": {
+            "createdDate": "2024-04-16T17:50:48.486Z",
+            "profile": "activityTracker.com/activityTrackerEvent"
+        },
+        "payload": {
+            "dimensions": {
+                "bottom": -31972,
+                "left": -32000,
+                "right": -31840,
+                "top": -32000
+            },
+            "exeName": "C:\\Windows\\explorer.exe",
+            "isMinimised": true,
+            "memoryUsageInBytes": "411336704",
+            "moduleName": "Explorer.EXE",
+            "processId": "3435973836",
+            "title": "2024-04-16_T17-45-31.757Z"
+        }
+    },
+    {
+        "metadata": {
+            "createdDate": "2024-04-16T17:50:48.486Z",
+            "profile": "activityTracker.com/activityTrackerEvent"
+        },
+        "payload": {
+            "dimensions": {
+                "bottom": -31972,
+                "left": -32000,
+                "right": -31840,
+                "top": -32000
+            },
+            "exeName": "C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE",
+            "isMinimised": true,
+            "memoryUsageInBytes": "232927232",
+            "moduleName": "OUTLOOK.EXE",
+            "processId": "3435973836",
+            "title": "Sent Items - stefanecmarek@icloud.com - Outlook"
+        }
+    },
+    {
+        "metadata": {
+            "createdDate": "2024-04-16T17:50:48.486Z",
+            "profile": "activityTracker.com/activityTrackerEvent"
+        },
+        "payload": {
+            "dimensions": {
+                "bottom": -31972,
+                "left": -32000,
+                "right": -31840,
+                "top": -32000
+            },
+            "exeName": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+            "isMinimised": true,
+            "memoryUsageInBytes": "505491456",
+            "moduleName": "",
+            "processId": "3435973836",
+            "title": "Alza.sk - Google Chrome"
+        }
+    },
+]
 ```
 
 **Windows Activity Tracker** also tries to synchronise these data with the main storage system. That's why the app also contains logic for associating itself with the storage system, including creating new profiles, requesting permissions and individual events uploading.
