@@ -6,7 +6,7 @@ sidebar_position: 0
 
 ## Introduction
 
-This **Windows Activity Tracker App** was programmed in C++ programmig language and is primary targeted at **Windows Operating System**. 
+This **Windows Activity Tracker App** was programmed in C++ programmig language and is primarily targeted at **Windows Operating System**. 
 It consists of GUI and tracking related business logic using Windows specific APIs.
 
 We chose **wxWidgets** for writing the UI part. **wxWidgets** is an open-source, cross-platform graphical user interface toolkit that allows developers to create applications with native look and feel on Windows, macOS, Linux, and other operating systems using C++.
@@ -17,13 +17,13 @@ As for the functionality, this is the current set of features:
 
 #### Being able to run in the background without a visible window and no icon in the taskbar
 
-When the application starts, it shows a GUI window containing various pages. User can start different services (which we talk about later) and close the app by either clicking on the minimise button or even a close button. When either of those buttons is clicked, the application hides the main GUI window, including the icon with a title in the task bar and moves to the system tray. It's only in the system tray where the user can bring the main UI back from. User also receives one-time popup alert explaining where to find this hiddne app.
+When the application starts, it shows a GUI window containing various screens. User can start different services (which we will talk about later) and then close the app by either clicking on the native minimise button or even a close button. When either of those buttons is clicked, the application hides the main GUI window, including the icon with a title in the task bar and moves to the system tray. It's only in the system tray where the user can bring the main UI back from. User also receives one-time popup alert explaining where to find this hidden app.
 
 Application is therefore able to run silently, not disturbing the user at all.
 
 #### Gathering Windows Apps Info
 
-**Windows Activity Tracker** periodicly gathers data about each individual running visible window app (excludes non-GUI applications).
+**Windows Activity Tracker** periodically gathers data about each individual running visible window app (excludes non-GUI applications).
 
 This set of applications data is then transformed into JSON and stored as a json file in predefined directory. This directory is chosen in the settings screen.
 User can set periodicity of this information gathering and start the gathering thread from the home screen of the app.
