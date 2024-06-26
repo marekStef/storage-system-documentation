@@ -16,12 +16,12 @@ const config = {
   url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/storageSystemDocs/',
+  baseUrl: '/storage-system-documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'marekStef', // Usually your GitHub org/user name.
-  projectName: 'storageSystemDocs', // Usually your repo name.
+  projectName: 'storage-system-documentation', // Usually your repo name.
   trailingSlash: false,
   
   onBrokenLinks: 'throw',
