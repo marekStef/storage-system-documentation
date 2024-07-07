@@ -15,6 +15,7 @@ const SwaggerUIComponent = () => {
         host: 'localhost:3003',
         basePath: '/',
         schemes: ['http'],
+        
         paths: {
             '/uploadNewSourceCode': {
                 post: {
@@ -332,7 +333,7 @@ const SwaggerUIComponent = () => {
                 </label>
             </div>
 
-            <SwaggerUI spec={swaggerSpec} />
+            <SwaggerUI spec={swaggerSpec} docExpansion="full" />
         </div>
     );
     
