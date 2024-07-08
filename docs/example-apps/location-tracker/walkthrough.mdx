@@ -13,8 +13,9 @@ The app is able to do the following:
 - **set foreground service for location gathering**: The Application launches custom foreground service that remains active even when the user or the Android operating system decides to kill the main UI application.
 - **export data to `csv`**
 
-### Flow of the whole app from the very first opening 
+## Flow of the whole app from the very first opening 
 
+### Association 
 In the main storage system, the admin user creates a new app holder for this new application. They assign a name to it and obtain an association token, which is then used to associate this location tracking application with the holder in the system.
 
 ![Windows Apps Setup](/img/example-apps/location-tracker/1.png)
@@ -31,6 +32,8 @@ The user then enters the IP address of the system along with the port in the and
 
 After successful association with the system, the application receives a token (to be precise `jwtTokenForPermissionRequestsAndProfiles`), which it then uses to create profiles and request permissions to data and a button for continuing with registration is displayed to the user.
 
+### Permissions requests
+
 The application also requests permission to smartphone notifications, to location, and to background location, and finally asks to be excluded from the list of apps that the operating system restricts to save battery.
 
 When requesting access to the user's location, the standard location permission (`ACCESS_FINE_LOCATION`, `ACCESS_COARSE_LOCATION`) itself is first requested and then the background location (`ACCESS_BACKGROUND_LOCATION`) as well.
@@ -42,9 +45,13 @@ If the application did not request an exception for battery saving, background l
   <img src={require("/img/example-apps/location-tracker/6.jpg").default} style={{height: '60vh', marginRight: '1rem'}} alt="Location Tracker App Image 1"/>
 </div>
 
+### Registering Profile and Requesting Permissions For This Profile in Data Storage
+
 The application then must register a profile in the system using the given token obtained after association. The profile contains a json schema showing what the generated data will look like.
 
-```json
+#### Profile
+
+```json title="locationTracker.com/profiles/location_profile"
 {
   "type": "object",
   "properties": {
@@ -100,10 +107,15 @@ After the profile is successfully created, the app needs to send permission requ
 
 When the request permission is registered in the system, the application notifies the user about the need to approve the permission. Otherwise the application won't be able to start synchronising the gathered data with the system.
 
+## Application After Successful Setup
+
 <div style={{ display: 'flex', justifyContent: 'center' }}>
   <img src={require("/img/example-apps/location-tracker/10.jpg").default} style={{height: '60vh', marginRight: '1rem'}} alt="Location Tracker App Image 1"/>
   <img src={require("/img/example-apps/location-tracker/11.jpg").default} style={{height: '60vh'}} alt="Location Tracker App Image 2" />
 </div>
+
+
+### Main features
 
 The application displays the following information:
 - When the last synchronization occurred
@@ -117,6 +129,7 @@ The application displays the following information:
   <img src={require("/img/example-apps/location-tracker/12.jpg").default} style={{height: '60vh', marginRight: '1rem'}} alt="Location Tracker App Image 1"/>
   <img src={require("/img/example-apps/location-tracker/13.jpg").default} style={{height: '60vh'}} alt="Location Tracker App Image 2" />
 </div>
+
 
 In the application, it is possible to set the period during which the user wants the application to collect data. Outside this period, the app does not collect location, but it monitors whether the user is connected to the correct network for data synchronization possibilities.
 
