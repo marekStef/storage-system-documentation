@@ -115,7 +115,82 @@ This is what such a json file looks like:
 ]
 ```
 
-**Windows Activity Tracker** also tries to synchronise these data with the main storage system. That's why the app also contains logic for associating itself with the storage system, including creating new profiles, requesting permissions and individual events uploading.
+**Windows Activity Tracker** also tries to synchronise this data with the main storage system. That's why the app also contains logic for associating itself with the storage system, including creating new profiles, requesting permissions and individual events uploading.
+
+##### Profile For Main Storage System
+
+```json title="activityTracker.com/activityTrackerEvent"
+{ 
+  "title": "WindowsActivityTrackingEvent",
+  "type": "object",
+  "properties": {
+    "processId": {
+      "type": "string",
+      "description": "Unique identifier for the windows process."
+    },
+    "title": {
+      "type": "string",
+      "description": "Name of the running process"
+    },
+    "exeName": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The end time of the event."
+    },
+    "memoryUsageInBytes": {
+      "type": "string",
+      "description": "Amount of memory process takes in bytes."
+    },
+    "isMinimised": {
+      "type": "boolean",
+      "description": "Whether the app is minimised in the taskbar or on desktop."
+    },
+    "moduleName": {
+      "type": "string",
+      "description": "Name of the module (oftentimes it's the exe name without the path)."
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "top": {
+          "type": "number"
+        },
+        "left": {
+          "type": "number"
+        },
+        "right": {
+          "type": "number"
+        },
+        "bottom": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "top",
+        "left",
+        "right",
+        "bottom"
+      ]
+    },
+    "gatheredAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this info was gathered - in ISO."
+    }
+  },
+  "required": [
+    "processId",
+    "title",
+    "exeName",
+    "memoryUsageInBytes",
+    "isMinimised",
+    "moduleName",
+    "dimensions",
+    "gatheredAt"
+  ],
+  "additionalProperties": false
+}
+```
 
 For getting this data, we primarily depend on `windows.h` and `psapi.h` libraries.
 
@@ -184,7 +259,7 @@ Application has the ability to register itself among the list of apps which are 
 
 ### Initial Setup Page
 
-This screen is meant for setting up with the main storage system. That's because as we already mentioned, the app synchronises the windows apps info data.
+This screen is meant for setting up with the main storage system. That's because as we already mentioned, the app synchronises the windows apps info data. We don't cover here all steps of association with the storage system - for more details, look at [association of Location Tracker app](../location-tracker/walkthrough.mdx#association) and for general understanding of association, please consult documentation for the main data storage system located [here](../../main-system/control-centre/introduction.md).
 
 ![Windows Activity Tracker - Initial Setup](/img/example-apps/windows-activity-tracker/initial-setup.png)
 
