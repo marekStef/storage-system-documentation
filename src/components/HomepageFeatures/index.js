@@ -4,17 +4,19 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Thorough documentation',
+    Image: require('@site/static/img/thorough_documentation.png').default,
+    imageType: 'png',
     description: (
       <>
-        Thorough documenation of every part of the system guiding you from the very beginning. Tutorial-like.
+        Thorough documentation of every part of a decentralized storage system, guiding you from the very beginning with a tutorial-like approach.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Proper examples',
+    Image: require('@site/static/img/backend-architecture/architecture.svg').default,
+    imageType: 'svg',
     description: (
       <>
         Showing proper examples along the way.
@@ -23,20 +25,25 @@ const FeatureList = [
   },
   {
     title: 'Multiple Example Apps',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Image: require('@site/static/img/example_applications.png').default,
+    imageType: 'png',
     description: (
       <>
-        We have provided you with multiple apps highlighting the unique features of the system
+        We have provided you with multiple apps highlighting the unique features of the system.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Image, imageType, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {imageType === 'png' ? (
+          <img src={Image} alt={title} className={clsx(styles.featureSvg, styles.responsiveImage)} />
+        ) : (
+          <Image className={styles.featureSvg} role="img" />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

@@ -90,8 +90,8 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://gitlab.mff.cuni.cz/stefanm4/managementsystem',
+            label: 'Project\'s Gitlab',
             position: 'right',
           },
         ],
@@ -137,7 +137,7 @@ const config = {
               //   to: '/blog',
               // },
               {
-                label: 'GitHub',
+                label: 'Project\'s Gitlab',
                 href: 'https://gitlab.mff.cuni.cz/stefanm4/managementsystem',
               },
             ],
