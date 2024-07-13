@@ -120,7 +120,7 @@ This is what such a json file looks like:
 ##### Profile For Main Storage System
 
 ```json title="activityTracker.com/activityTrackerEvent"
-{ 
+{
   "title": "WindowsActivityTrackingEvent",
   "type": "object",
   "properties": {
@@ -134,7 +134,6 @@ This is what such a json file looks like:
     },
     "exeName": {
       "type": "string",
-      "format": "date-time",
       "description": "The end time of the event."
     },
     "memoryUsageInBytes": {
@@ -171,11 +170,6 @@ This is what such a json file looks like:
         "right",
         "bottom"
       ]
-    },
-    "gatheredAt": {
-      "type": "string",
-      "format": "date-time",
-      "description": "When this info was gathered - in ISO."
     }
   },
   "required": [
@@ -185,8 +179,7 @@ This is what such a json file looks like:
     "memoryUsageInBytes",
     "isMinimised",
     "moduleName",
-    "dimensions",
-    "gatheredAt"
+    "dimensions"
   ],
   "additionalProperties": false
 }

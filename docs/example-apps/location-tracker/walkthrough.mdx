@@ -78,20 +78,18 @@ The application then must register a profile in the system using the given token
       "type": "number"
     },
     "time": {
-      "type": "number"
+      "type": "string",
+      "description": "Time in ISO 8601 format"
     }
   },
   "required": [
     "latitude",
     "longitude",
-    "accuracy",
-    "altitude",
-    "speed",
-    "speedAccuracyMetersPerSecond",
-    "time",
+    "time"
   ],
   "additionalProperties": true
 }
+
 ```
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
