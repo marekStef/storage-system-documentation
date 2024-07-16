@@ -90,8 +90,8 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://gitlab.mff.cuni.cz/stefanm4/managementsystem',
-            label: 'Project\'s Gitlab',
+            href: 'https://github.com/marekStef/decentralised-storage-system',
+            label: 'Project\'s GitHub',
             position: 'right',
           },
         ],
@@ -137,8 +137,8 @@ const config = {
               //   to: '/blog',
               // },
               {
-                label: 'Project\'s Gitlab',
-                href: 'https://gitlab.mff.cuni.cz/stefanm4/managementsystem',
+                label: 'Project\'s GitHub',
+                href: 'https://github.com/marekStef/decentralised-storage-system',
               },
             ],
           },

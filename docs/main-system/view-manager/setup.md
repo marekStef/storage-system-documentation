@@ -2,22 +2,6 @@
 sidebar_position: 10
 ---
 
-# Setup
+# Setup and Deployment
 
-## Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-## Usage
-
-In the `.env` file, execution services like `JAVASCRIPT_EXECUTION_SERVICE_URI` and `PYTHON_EXECUTION_SERVICE_URI` need to be correctly set for a View Manager to be fully functional. `MONGO_DB_URI` needs to be set as well.
-
-Start the server:
-
-```bash
-npm start
-```
+Please read this [README](https://github.com/marekStef/decentralised-storage-system/tree/master/dataStorageSystem/backend/viewManager) for the latest Setup and Deployment of this component. We didn't want to copy the same information here.
