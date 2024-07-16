@@ -8,11 +8,12 @@ There are multiple requirements regarding the code structure as well as the file
 
 ### Python Files Only
 
-All files uploaded need to be valid python files with `.py` ending.
+All uploaded source code files need to be valid python files with `.py` extension
 
 ### Importing of Other Files
 
-You can upload up to 10 python files which can import one another.
+You can upload up to 10 python files which can import one another. Importing from another file needs to be only local - meaning the imported
+file must be one of the other files in the request.
 
 ### One Main File Requirement
 
