@@ -254,17 +254,17 @@ Application has the ability to register itself among the list of apps which are 
 
 This screen is meant for setting up with the main storage system. That's because as we already mentioned, the app synchronises the windows apps info data. We don't cover here all steps of association with the storage system - for more details, look at [association of Location Tracker app](../location-tracker/walkthrough.mdx#association) and for general understanding of association, please consult documentation for the main data storage system located [here](../../main-system/control-centre/introduction.md).
 
-![Windows Activity Tracker - Initial Setup](/img/example-apps/windows-activity-tracker/initial-setup.png)
+![Windows Activity Tracker - Initial Setup](/img/example-apps/windows-activity-tracker/initial-setup_new.png)
 
 Input becomes green, when it's been checked and it's correct. When the setup is successfull, these inputs disappear and the information about the app being setup is displayed.
 
-![Windows Activity Tracker - Initial Setup Already Set](/img/example-apps/windows-activity-tracker/initial-setup-app-already-set.png)
+![Windows Activity Tracker - Initial Setup Already Set](/img/example-apps/windows-activity-tracker/initial-setup-app-already-set_new.png)
 
 ### Existing Setup Page
 
 If there exists some already existing setup in the main storage system, the user can just copy proper tokens and paste them here.
 
-![Windows Activity Tracker - Existing Setup](/img/example-apps/windows-activity-tracker/existing-setup.png)
+![Windows Activity Tracker - Existing Setup](/img/example-apps/windows-activity-tracker/existing-setup_new.png)
 
 ### Home Page
 
@@ -272,7 +272,7 @@ This is the place where magic happens - user can start all aforementioned featur
 
 Also, as you can see, currently connected to network SSIDs are shown.
 
-![Windows Activity Tracker - Home Screen](/img/example-apps/windows-activity-tracker/home.png)
+![Windows Activity Tracker - Home Screen](/img/example-apps/windows-activity-tracker/home_new.png)
 
 ### Settings Page
 
@@ -280,6 +280,6 @@ This is the page where the user can set the directory where all data will be sto
 
 Periodicity (in seconds) can be set for taking screenshots and windows apps info gathering.
 
-![Windows Activity Tracker - Home Screen](/img/example-apps/windows-activity-tracker/settings.png)
+![Windows Activity Tracker - Home Screen](/img/example-apps/windows-activity-tracker/settings_new.png)
 
 Last, but not least, the app can be reset from this place.
