@@ -63,11 +63,11 @@ This is the profile the calendar needs to register at the initialisation process
 
 When the user wants to start using this calendar, they need to first locate **Storage System**. Once it's located, the setup process allows the user to type in `Association Token` which the user gets after creating new **App Holder** (either in the **Control Centre** or by using raw api endpoints).
 
-![Calendar Initial Setup](/img/example-apps/calendar/calendar-initial-setup.png)
+![Calendar Initial Setup](/img/example-apps/calendar/calendar-initial-setup_new.png)
 
 If the app has been already set up in the system, user can just copy needed tokens from the storage system. All necessary information is in the **Control Centre** app.
 
-![Calendar Existing Setup](/img/example-apps/calendar/calendar-existing-setup.png)
+![Calendar Existing Setup](/img/example-apps/calendar/calendar-existing-setup_new.png)
 
 ## Calendar Settings
 
