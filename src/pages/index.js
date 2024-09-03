@@ -16,17 +16,27 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons} style={{flexDirection: 'column'}}>
+        <div className={styles.buttons} style={{flexDirection: 'column', alignItems: 'center'}}>
           <Link
-            style={{margin: '1rem'}}
+            style={{
+              margin: '1rem',
+              width: '100%',
+              maxWidth: '300px',
+              textAlign: 'center',
+            }}
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/category/introduction">
             Storage System Walkthrough - 40 minutes of reading⏱️
           </Link>
           <Link
-            style={{margin: '1rem'}}
+            style={{
+              margin: '1rem',
+              width: '100%',
+              maxWidth: '300px',
+              textAlign: 'center',
+            }}
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/example-apps/intro">
             Storage System Example Apps - 15 minutes of reading⏱️
           </Link>
         </div>
