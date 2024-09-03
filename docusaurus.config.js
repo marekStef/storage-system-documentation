@@ -22,7 +22,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'marekStef', // Usually your GitHub org/user name.
   projectName: 'storage-system-documentation', // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  deploymentBranch: "gh-pages-new",
   trailingSlash: false,
   
   onBrokenLinks: 'throw',
