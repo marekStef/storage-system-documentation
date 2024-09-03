@@ -21,8 +21,10 @@ function HomepageHeader() {
             style={{
               margin: '1rem',
               width: '100%',
-              maxWidth: '300px',
+              maxWidth: '280px', // Adjusted width for better fit
               textAlign: 'center',
+              whiteSpace: 'normal', // Allows text to wrap
+              wordBreak: 'break-word', // Ensures long words break if necessary
             }}
             className="button button--secondary button--lg"
             to="/docs/category/introduction">
@@ -32,8 +34,10 @@ function HomepageHeader() {
             style={{
               margin: '1rem',
               width: '100%',
-              maxWidth: '300px',
+              maxWidth: '280px', // Adjusted width for better fit
               textAlign: 'center',
+              whiteSpace: 'normal', // Allows text to wrap
+              wordBreak: 'break-word', // Ensures long words break if necessary
             }}
             className="button button--secondary button--lg"
             to="/docs/example-apps/intro">
