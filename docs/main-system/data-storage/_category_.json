@@ -1,8 +1,0 @@
-{
-  "label": "Data Storage",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Main component for persistent storage of events within our system architecture."
-  }
-}
